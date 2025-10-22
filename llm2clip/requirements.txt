@@ -1,12 +1,16 @@
-# Core Deep Learning
+# =============================
+# ✅ Core Deep Learning
+# =============================
 torch>=1.9.0
 torchvision
 deepspeed==0.6.5
 
-# Dataset & Data Handling
+# =============================
+# ✅ Data handling & utilities
+# =============================
 webdataset>=0.2.5
 pandas
-numpy
+numpy>=1.26.0
 scipy
 braceexpand
 ftfy
@@ -18,21 +22,33 @@ iopath
 tqdm
 requests
 blobfile
+sh
 
-# Hugging Face ecosystem
-huggingface_hub>=0.25
+# =============================
+# ✅ Hugging Face ecosystem
+# =============================
+huggingface_hub>=0.25.0
 transformers>=4.43.0
-# datasets intentionally omitted to avoid pyarrow conflict on Kaggle
+# datasets intentionally omitted to avoid pyarrow conflict
 
-# Visualization & Logging
+# =============================
+# ✅ Visualization & Logging
+# =============================
 tensorboardX
 wandb
 
-# Utilities & Typing
+# =============================
+# ✅ Development tools
+# =============================
 mypy
 pytest
-sh
 
-# Compatibility fixes
+# =============================
+# ✅ Compatibility fixes
+# =============================
 pyarrow>=21.0.0
 pydantic<2.12,>=2.0
+rich<14  # fix conflict with bigframes
+google-cloud-bigquery>=3.31.0
+google-cloud-bigquery-storage>=2.30.0
+google-api-core>=2.10.2,<3.0.0
