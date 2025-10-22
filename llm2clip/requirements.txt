@@ -1,27 +1,38 @@
+# Core Deep Learning
 torch>=1.9.0
 torchvision
 deepspeed==0.6.5
-# xformers
-# apex
-# timm==0.5.4
+
+# Dataset & Data Handling
 webdataset>=0.2.5
-tqdm
 pandas
-braceexpand
-huggingface_hub
-transformers
-Pillow
-blobfile
-mypy
 numpy
-pytest
-requests
-einops
-tensorboardX
 scipy
-sh
-wandb
+braceexpand
 ftfy
 regex
-iopath
+Pillow
 pyyaml
+einops
+iopath
+tqdm
+requests
+blobfile
+
+# Hugging Face ecosystem
+huggingface_hub>=0.25
+transformers>=4.43.0
+# datasets intentionally omitted to avoid pyarrow conflict on Kaggle
+
+# Visualization & Logging
+tensorboardX
+wandb
+
+# Utilities & Typing
+mypy
+pytest
+sh
+
+# Compatibility fixes
+pyarrow>=21.0.0
+pydantic<2.12,>=2.0
