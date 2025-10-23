@@ -9,7 +9,7 @@ tqdm
 pandas
 braceexpand
 huggingface_hub
-transformers==4.43
+transformers==4.44
 Pillow
 blobfile
 mypy
