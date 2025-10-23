@@ -4,7 +4,7 @@ import torch
 import argparse
 from glob import glob
 import webdataset as wds
-from llm2vec.llm2vec import LLM2Vec
+from ..llm2vec.llm2vec import LLM2Vec
 from itertools import islice
 from transformers import AutoModel, AutoConfig, AutoTokenizer
 
